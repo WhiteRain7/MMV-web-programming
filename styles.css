@@ -1,0 +1,117 @@
+* {
+    --clr-semiback: #EEEEDD;
+    --clr-back: #FFFFEE;
+    --clr-text: #485467;
+
+    font-family: sans;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--clr-back);
+    color: var(--clr-text);
+    border-color: var(--clr-text);
+}
+
+/* about.html */
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 3px solid;
+    background-color: var(--clr-semiback);
+}
+
+#header > img {
+    padding: calc((64px - 48px) / 2);
+    background-color: inherit;
+}
+
+#header > h1 {
+    font-size: 180%;
+    background-color: inherit;
+    cursor: default;
+}
+
+.about_sec {
+    max-width: 800px;
+    margin: 30px 10px 30px 30px;
+    padding: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 5px solid;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(to right, var(--clr-semiback), transparent 80%);
+}
+
+.about_sec > * {
+    max-width: 600px;
+    background: inherit;
+}
+
+.about_sec > h1 {
+    font-size: 120%;
+}
+
+.about_sec > p {
+    margin-top: 5px;
+}
+
+.about_footer {
+    width: calc(100% - 60px);
+    height: fit-content;
+    padding: 30px;
+    background-color: var(--clr-semiback);
+    border-top: 2px solid;
+}
+
+.about_footer * {
+    background-color: transparent;
+}
+
+.about_footer li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.about_footer li > a {
+    text-decoration: none;
+    transition: .25s;
+}
+.about_footer li > a:hover {
+    text-shadow: 0 0 10px var(--clr-text);
+}
+
+/* links.html */
+
+.other_sec {
+    max-width: 800px;
+    margin: 30px 10px 30px 30px;
+    padding: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 5px solid;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(to right, var(--clr-semiback), transparent 80%);
+}
+
+.other_sec > * {
+    max-width: 600px;
+    background: inherit;
+}
+
+.other_sec > a {
+    font-size: 120%;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.other_sec > a:hover {
+    text-shadow: 0 0 10px var(--clr-text);
+}
